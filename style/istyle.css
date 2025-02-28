@@ -1,0 +1,22 @@
+body{
+    padding: 20px;
+    margin: 0;
+    background-color: black;
+    color: whtie;}
+
+    .header-container{
+        display: block;
+        background-color: brown;
+        width: 50%;
+        height: 50vh;
+        max-width: 80%;
+    }
+
+    .parralax-effect{
+        display: block;
+        background-color: brown;
+        width: 50%;
+        height: 50vh;
+        max-width: 80%;
+    }
+    
