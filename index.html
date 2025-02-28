@@ -3,68 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/istyle.css"
-    ">
+    <link rel="stylesheet" href="/style/istyle.css">
     <title>RADOKAST-podkast</title>
 </head>
 <body>
     <div class="body-container">
-
-        <div class="header-container">
-
+        <!-- Navigation Bar -->
+        <nav class="header-container">
             <a href="/">Pocetna</a>
             <a href="/">Epizode</a>
             <a href="/">Blog</a>
             <a href="/">Kontakt</a>
+        </nav>
 
-        </div>
-
-        <div class="parallax-effect">
-
-            <h1>Dobrodošli na stranicu podkasta RADOKAST</h1>
-
-            <p>
-                  Ovo je oficijalna stranica podkasta RADOKAST, osećajte se slobodno da je istražite i OSTANITE RADOZNALI
-            </p>
-
-        </div>
-
-        <div class="parallax-effect1">
-
-            <h1>Šta je RADOKAST?</h1>
-            <p>
-                Radokast je sredstvo preko kojeg želimo da unapredimo međuljudske odnose u našoj zajednici. 
-                Emisija RadoKast vodi se principom slobodnog dijaloga koji je inspirisan rečima: rad, radost i radoznalost. 
-                U svakoj od emisija bavićemo se novom temom i pozivati odgovarajuće goste koji bi mogli da pomognu da se određena tema isprti iz više uglova. 
-                Nakon sagledavanja problema razgovor će biti usmeren ka mogućim rešenjima za dati problem. 
-                Nadamo se da će ovi razgovori doprineti boljem razumevanju i širiti kulturu prihvatanja, 
-                građanske odgovornosti i inovacija.
-            </p>
-
-        </div>
-
-        <div class="parallax-effect-2">
-
-            <div class="social-media-card-instagram">
-
+        <!-- Parallax Sections -->
+        <div class="parallax-effect" id="parallax1">
+            <div class="parallax-content">
+                <h1>Dobrodošli na stranicu podkasta RADOKAST</h1>
+                <p>
+                    Ovo je oficijalna stranica podkasta RADOKAST, osećajte se slobodno da je istražite i OSTANITE RADOZNALI
+                </p>
             </div>
-
-            <div class="social-media-card-facebook">
-
-            </div>
-
-            <div class="social-media-card-youtube">
-
-            </div>
-
         </div>
 
+        <div class="parallax-effect1" id="parallax2">
+            <div class="parallax-content">
+                <h1>Šta je RADOKAST?</h1>
+                <p>
+                    Radokast je sredstvo preko kojeg želimo da unapredimo međuljudske odnose u našoj zajednici. 
+                    Emisija RadoKast vodi se principom slobodnog dijaloga koji je inspirisan rečima: rad, radost i radoznalost. 
+                    U svakoj od emisija bavićemo se novom temom i pozivati odgovarajuće goste koji bi mogli da pomognu da se određena tema isprti iz više uglova. 
+                    Nakon sagledavanja problema razgovor će biti usmeren ka mogućim rešenjima za dati problem. 
+                    Nadamo se da će ovi razgovori doprineti boljem razumevanju i širiti kulturu prihvatanja, 
+                    građanske odgovornosti i inovacija.
+                </p>
+            </div>
+        </div>
+
+        <!-- Social Media Cards -->
+        <div class="parallax-effect-2" id="parallax3">
+            <div class="social-media-cards-container">
+                <div class="social-media-card social-media-card-instagram">
+                    <div class="social-media-card-inner">
+                        <div class="social-media-card-front">
+                            <h2>Instagram</h2>
+                            <p>Follow us on Instagram for the latest updates!</p>
+                        </div>
+                        <div class="social-media-card-back">
+                            <h2>Instagram</h2>
+                            <p>@YourInstagramHandle</p>
+                            <a href="https://instagram.com/YourInstagramHandle" target="_blank">Visit Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-media-card social-media-card-facebook">
+                    <div class="social-media-card-inner">
+                        <div class="social-media-card-front">
+                            <h2>Facebook</h2>
+                            <p>Like our Facebook page for more content!</p>
+                        </div>
+                        <div class="social-media-card-back">
+                            <h2>Facebook</h2>
+                            <p>@YourFacebookHandle</p>
+                            <a href="https://facebook.com/YourFacebookHandle" target="_blank">Visit Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-media-card social-media-card-youtube">
+                    <div class="social-media-card-inner">
+                        <div class="social-media-card-front">
+                            <h2>YouTube</h2>
+                            <p>Subscribe to our YouTube channel for videos!</p>
+                        </div>
+                        <div class="social-media-card-back">
+                            <h2>YouTube</h2>
+                            <p>@YourYouTubeHandle</p>
+                            <a href="https://youtube.com/YourYouTubeHandle" target="_blank">Visit Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
         <div class="footer-container">
-
-            
-
+            <!-- Footer content goes here -->
         </div>
-
     </div>
+
+    <script src="/src/index.js"></script>
 </body>
 </html>

@@ -1,22 +1,249 @@
-body{
-    padding: 20px;
+/* General Reset */
+* {
     margin: 0;
-    background-color: black;
-    color: whtie;}
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    .header-container{
-        display: block;
-        background-color: brown;
-        width: 50%;
-        height: 50vh;
-        max-width: 80%;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+.header-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px; /* Reduced margin */
+    padding: 8px 16px; /* Reduced padding */
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+.header-container a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+    border-radius: 5px;
+}
+
+/* Parallax Effects */
+.parallax-effect,
+.parallax-effect1,
+.parallax-effect-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh; /* Reduced height */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    margin-bottom: 20px; /* Reduced space between sections */
+}
+
+.parallax-effect {
+    background-image: url('path/to/your/image1.jpg');
+}
+
+.parallax-effect1 {
+    background-image: url('path/to/your/image2.jpg');
+}
+
+.parallax-effect-2 {
+    background-image: url('path/to/your/image3.jpg');
+}
+
+.parallax-content {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 20px; /* Reduced padding */
+    border-radius: 15px;
+    transform: translateZ(50px); /* 3D effect */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* White shadow */
+}
+
+.parallax-effect:hover,
+.parallax-effect1:hover,
+.parallax-effect-2:hover {
+    transform: scale(1.05) rotateX(5deg) rotateY(5deg); /* 3D hover effect */
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.8); /* Stronger white shadow */
+}
+
+/* Social Media Cards */
+.social-media-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.social-media-card {
+    width: calc(33.333% - 40px);
+    min-height: 250px; /* Reduced height */
+    perspective: 1000px;
+    margin: 10px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.social-media-card:hover {
+    transform: translateY(-10px) rotateX(10deg) rotateY(10deg); /* 3D hover effect */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); /* White shadow */
+}
+
+.social-media-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.social-media-card:hover .social-media-card-inner {
+    transform: rotateY(180deg);
+}
+
+.social-media-card-front,
+.social-media-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    padding: 20px; /* Reduced padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* White shadow */
+    text-align: center;
+}
+
+.social-media-card-front {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+}
+
+.social-media-card-back {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+.social-media-card-instagram .social-media-card-front {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white;
+}
+
+.social-media-card-facebook .social-media-card-front {
+    background-color: #1877f2;
+    color: white;
+}
+
+.social-media-card-youtube .social-media-card-front {
+    background-color: #ff0000;
+    color: white;
+}
+
+.social-media-card h2 {
+    font-size: 1.5rem; /* Reduced font size */
+    margin-bottom: 10px; /* Reduced margin */
+    font-weight: bold;
+}
+
+.social-media-card p {
+    font-size: 0.9rem; /* Reduced font size */
+    line-height: 1.4; /* Adjusted line height */
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.social-media-card a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px; /* Reduced padding */
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 0.9rem; /* Reduced font size */
+}
+
+.social-media-card a:hover {
+    background-color: white;
+    color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .social-media-card {
+        width: calc(50% - 40px);
     }
 
-    .parralax-effect{
-        display: block;
-        background-color: brown;
-        width: 50%;
-        height: 50vh;
-        max-width: 80%;
+    .parallax-effect,
+    .parallax-effect1,
+    .parallax-effect-2 {
+        height: 70vh; /* Further reduced height for tablets */
     }
-    
+
+    .parallax-content {
+        padding: 15px; /* Further reduced padding */
+    }
+
+    .social-media-card h2 {
+        font-size: 1.3rem; /* Smaller font size */
+    }
+
+    .social-media-card p {
+        font-size: 0.8rem; /* Smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .social-media-card {
+        width: calc(100% - 40px);
+    }
+
+    .parallax-effect,
+    .parallax-effect1,
+    .parallax-effect-2 {
+        height: 60vh; /* Further reduced height for phones */
+    }
+
+    .parallax-content {
+        padding: 10px; /* Further reduced padding */
+    }
+
+    .social-media-card h2 {
+        font-size: 1.2rem; /* Smaller font size */
+    }
+
+    .social-media-card p {
+        font-size: 0.75rem; /* Smaller font size */
+    }
+
+    .header-container a {
+        margin: 0 5px; /* Reduced margin */
+        padding: 6px 12px; /* Reduced padding */
+        font-size: 0.8rem; /* Smaller font size */
+    }
+}
